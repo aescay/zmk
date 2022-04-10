@@ -1,4 +1,4 @@
-#include "lvgl.h"
+#include <lvgl.h>
 
 
 #ifndef LV_ATTRIBUTE_MEM_ALIGN
@@ -9,7 +9,7 @@
 #define LV_ATTRIBUTE_IMG_DBT LOGO
 #endif
 
-const LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_DBT LOGO uint8_t dbt logo_map[] = {
+const LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_DBTLOGO uint8_t dbtlogo_map[] = {
   0x4f, 0x59, 0x98, 0xff, 	/*Color of index 0*/
   0xfd, 0xfd, 0xfc, 0xff, 	/*Color of index 1*/
 
@@ -178,12 +178,12 @@ const LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_DBT LOGO 
   0x28, 0x00, 0x03, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xfc, 
 };
 
-const lv_img_dsc_t dbt logo = {
+const lv_img_dsc_t dbtlogo = {
   .header.cf = LV_IMG_CF_INDEXED_1BIT,
   .header.always_zero = 0,
   .header.reserved = 0,
   .header.w = 310,
   .header.h = 163,
   .data_size = 6365,
-  .data = dbt logo_map,
+  .data = dbtlogo_map,
 };
