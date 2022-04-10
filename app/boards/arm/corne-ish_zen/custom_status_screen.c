@@ -63,9 +63,8 @@ lv_obj_t *zmk_display_status_screen() {
 
 #if CONFIG_BOARD_CORNEISH_ZEN_LEFT
     lv_obj_t * LayersHeading;
-    LayersHeading = lv_img_create(screen, NULL);
+    LayersHeading = lv_label_set_text(label, "@andrw");
     lv_obj_align(LayersHeading, NULL, LV_ALIGN_IN_BOTTOM_MID, 8, 5);
-    lv_img_set_src(LayersHeading, &layers2);
 #endif
 
     //lv_task_handler();
