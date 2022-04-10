@@ -48,8 +48,8 @@ const LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_DBTLOGO u
 const lv_img_dsc_t dbtlogo = {
   .header.cf = LV_IMG_CF_INDEXED_1BIT,
   .header.always_zero = 0,
-  .header.w = 80,
-  .header.h = 30,
+  .header.w = 72,
+  .header.h = 27,
   .data_size = 308,
   .data = dbtlogo_map,
 };
