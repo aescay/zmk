@@ -47,6 +47,6 @@ const lv_img_dsc_t dbtlogo = {
   .header.always_zero = 0,
   .header.w = 72,
   .header.h = 27,
-  .data_size = 308,
+  .data_size = 251,
   .data = dbtlogo_map,
 };
