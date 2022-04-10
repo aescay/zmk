@@ -14,7 +14,7 @@
 LOG_MODULE_DECLARE(zmk, CONFIG_ZMK_LOG_LEVEL);
 
 LV_IMG_DECLARE(dbtlogo);
-LV_IMG_DECLARE(layers2);
+LV_IMG_DECLARE(nycskyline);
 
 #if IS_ENABLED(CONFIG_CUSTOM_WIDGET_BATTERY_STATUS)
 static struct zmk_widget_battery_status battery_status_widget;
@@ -62,9 +62,10 @@ lv_obj_t *zmk_display_status_screen() {
 #endif
 
 #if CONFIG_BOARD_CORNEISH_ZEN_LEFT
-    lv_obj_t * LayersHeading;
-    LayersHeading = lv_label_set_text(label, "@andrw");
-    lv_obj_align(LayersHeading, NULL, LV_ALIGN_IN_BOTTOM_MID, 8, 5);
+    lv_obj_t * nycskyline_icon;
+    nycskyline_icon = lv_img_create(screen, NULL);
+    lv_img_set_src(nycskyline_icon, &nycskyline);
+    lv_obj_align(nycskyline_icon, NULL, LV_ALIGN_IN_BOTTOM_MID, 2, -5);
 #endif
 
     //lv_task_handler();
